@@ -46,7 +46,7 @@
     <div class="overlay">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/"> <img src="/v1/assets/uploads/logo/logo.png" alt="ChainCity"></a>
+                <a class="navbar-brand" href="/"> <img src="/v1/assets/uploads/logo/logo.png" alt="Restors"></a>
                 <button
                     class="navbar-toggler p-0"
                     type="button"

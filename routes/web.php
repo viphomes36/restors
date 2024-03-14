@@ -16,9 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\PageController::class,'index']);
 
+Route::get('/admin', function () {
+    abort(403);
+});
+
 Route::get('/dashboard', function () {
     return view('v1/dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard/orders', [\App\Http\Controllers\DashboardController::class,'orders'])->middleware(['auth', 'verified'])->name('dashboard_orders');
+
+Route::post('/dashboard/orders', [\App\Http\Controllers\OrderController::class,'save'])->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
