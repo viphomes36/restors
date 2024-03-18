@@ -20,3 +20,4 @@ yarn-error.log
 /laradock
 /database/mysql
 /database/redis
+notes.txt

@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PageController::class,'index']);
+Route::get('/developers', [\App\Http\Controllers\PageController::class,'developers']);
 
-Route::get('/admin', function () {
-    abort(403);
-});
+
 
 Route::get('/dashboard', function () {
     return view('v1/dashboard');

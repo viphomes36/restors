@@ -3,3 +3,4 @@ sudo docker-compose exec --user=laradock workspace bash
 
 erastov94_restor
 %BXaGb2%
+testadmin@re-stors.com lOeSwd12Lkiz
