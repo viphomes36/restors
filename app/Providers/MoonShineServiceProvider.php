@@ -26,7 +26,6 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     {
         return [
             new BuildingResource(),
-            new FlatResource()
         ];
     }
 

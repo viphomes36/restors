@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Building;
 
 use MoonShine\Fields\Date;
+use MoonShine\Fields\Json;
 use MoonShine\Fields\Number;
+use MoonShine\Fields\Position;
 use MoonShine\Fields\Relationships\BelongsTo;
 use MoonShine\Fields\Relationships\HasMany;
 use MoonShine\Fields\Select;
@@ -30,8 +32,8 @@ class BuildingResource extends ModelResource
         return [
             Block::make([
                 ID::make()->sortable(),
-                Number::make('Этажность','flat_count'),
-                Number::make('Минимальный первый взнос','flat_count'),
+                Number::make('Этажность', 'flat_count'),
+                Number::make('Минимальный первый взнос', 'flat_count'),
                 Select::make('План платежей', 'credit_plan')->nullable()
                     ->options([
                         '1' => 'Квартал',
@@ -39,7 +41,15 @@ class BuildingResource extends ModelResource
                         '3' => 'Индивидуально',
                     ])->nullable()->hideOnIndex(),
                 Date::make('Срок сдачи', 'finish_date')->nullable(),
-                HasMany::make('Этажи','flats',resource: new FlatResource())->creatable()->searchable(false)->hideOnIndex(),
+                Json::make('Этажи', 'flats')
+                    ->fields([
+                        Position::make(),
+                        Number::make('Этаж', 'flat_num'),
+                        Number::make('Цена от', 'start_price'),
+                        Number::make('Цена до', 'end_price'),
+                        Number::make('Общее кол-во квартир', 'apartment_count'),
+                        Number::make('Квартир продано', 'apartment_with_sale'),
+                    ])->hideOnIndex(),
                 BelongsTo::make('Complex')->hideOnIndex(),
             ]),
         ];

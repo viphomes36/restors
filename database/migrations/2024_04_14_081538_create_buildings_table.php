@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('min_credit_percent')->nullable();
             $table->integer('credit_plan')->nullable();
             $table->dateTime('finish_date')->nullable();
+            $table->text('flats')->nullable();
             $table->timestamps();
         });
     }

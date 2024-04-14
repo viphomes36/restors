@@ -11,13 +11,12 @@ class Building extends Model
 
     protected $guarded = [];
 
+    protected $casts = [
+        'flats' => 'json',
+    ];
+
     public function complex()
     {
         return $this->belongsTo(Complex::class);
-    }
-
-    public function flats()
-    {
-        return $this->hasMany(Flat::class);
     }
 }
