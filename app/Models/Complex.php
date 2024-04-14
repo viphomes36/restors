@@ -45,4 +45,14 @@ class Complex extends Model implements HasMedia
         return $this->belongsTo(Developer::class);
     }
 
+    public function infrastructures()
+    {
+        return $this->belongsToMany(Infrastructure::class);
+    }
+    public function buildings()
+    {
+        return $this->hasMany(Building::class);
+    }
+
+
 }
