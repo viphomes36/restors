@@ -70,7 +70,7 @@ class ComplexResource extends ModelResource
                         '3' => 'Комфорт',
                         '4' => 'Бизнес',
                     ])->nullable(),
-                Text::make('Address')->nullable()->hideOnIndex(),
+                Text::make('Address')->nullable()->hideOnIndex()->required()->hideOnIndex(),
                 Text::make('Координаты','location')->nullable()->hideOnIndex(),
                 Textarea::make('Описание','description')->nullable()->hideOnIndex(),
                 Date::make('Начало строительства', 'start_date')->hideOnIndex(),
