@@ -38,13 +38,13 @@ class DeveloperResource extends ModelResource
                 Slug::make('Slug')->from('name')
                     ->unique(),
                 Image::make('Logo')->nullable(),
-                Text::make('Address')->nullable(),
-                Textarea::make('Короткое описание','short_description')->nullable(),
-                Textarea::make('История застройщика','full_description')->nullable(),
-                Text::make('Ссылка на видео','video')->nullable(),
+                Text::make('Address')->nullable()->hideOnIndex(),
+                Textarea::make('Короткое описание','short_description')->nullable()->hideOnIndex(),
+                Textarea::make('История застройщика','full_description')->nullable()->hideOnIndex(),
+                Text::make('Ссылка на видео','video')->nullable()->hideOnIndex(),
                 Number::make('Год начала работы','start_year')->nullable(),
-                Text::make('Ссылка на прайс','price_link')->nullable(),
-                MediaLibrary::make('Фото офиса', 'photos')->multiple()->removable(),
+                Text::make('Ссылка на прайс','price_link')->nullable()->hideOnIndex(),
+                MediaLibrary::make('Фото офиса', 'photos')->multiple()->removable()->hideOnIndex(),
                 Switcher::make('Активно', 'active')
             ]),
         ];
