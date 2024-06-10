@@ -13,6 +13,7 @@ use MoonShine\Fields\Slug;
 use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Textarea;
+use MoonShine\Fields\TinyMce;
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
@@ -39,8 +40,8 @@ class DeveloperResource extends ModelResource
                     ->unique(),
                 Image::make('Logo')->nullable(),
                 Text::make('Address')->nullable()->hideOnIndex(),
-                Textarea::make('Короткое описание','short_description')->nullable()->hideOnIndex(),
-                Textarea::make('История застройщика','full_description')->nullable()->hideOnIndex(),
+                TinyMce::make('Короткое описание','short_description')->nullable()->hideOnIndex(),
+                TinyMce::make('История застройщика','full_description')->nullable()->hideOnIndex(),
                 Text::make('Ссылка на видео','video')->nullable()->hideOnIndex(),
                 Number::make('Год начала работы','start_year')->nullable(),
                 Text::make('Ссылка на прайс','price_link')->nullable()->hideOnIndex(),

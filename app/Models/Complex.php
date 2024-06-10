@@ -13,6 +13,11 @@ class Complex extends Model implements HasMedia
 {
     use HasFactory;
     use InteractsWithMedia;
+
+    protected $casts = [
+        'flats' => 'infra_distanse',
+    ];
+
     public function registerMediaConversions(Media $media = null): void
     {
         $this

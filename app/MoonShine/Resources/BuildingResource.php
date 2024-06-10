@@ -47,6 +47,11 @@ class BuildingResource extends ModelResource
                         Number::make('Этаж', 'flat_num'),
                         Number::make('Цена от', 'start_price'),
                         Number::make('Цена до', 'end_price'),
+                        Number::make('Квадрат от', 'count_square_min'),
+                        Number::make('Квадрат до', 'count_square_max'),
+                        Number::make('Цена за квадрат от', 'start_square_price'),
+                        Number::make('Цена за квадрат до', 'end_square_price'),
+
                         Number::make('Общее кол-во квартир', 'apartment_count'),
                         Number::make('Квартир продано', 'apartment_with_sale'),
                     ])->hideOnIndex(),
