@@ -69,9 +69,10 @@ class ComplexResource extends ModelResource
                     ]),
             Select::make('Валюта', 'currency')
                 ->options([
-                    '1' => 'Доллар',
-                    '2' => 'Евро',
-                    '3' => 'Рубли',
+                    '1' => 'USD',
+                    '2' => 'EUR',
+                    '3' => 'RUB',
+                    '4' => 'AED'
                 ]),
                 Select::make('Класс жилья', 'complex_class')
                     ->options([
@@ -94,7 +95,7 @@ class ComplexResource extends ModelResource
                     Number::make('Средняя школа', 'school'),
                     Number::make('Магазин', 'markets'),
                     Number::make('Медицинский центр', 'medical'),
-                ])->hideOnIndex(),
+                ])->hideOnIndex()->creatableLimit(1),
 
                 Text::make('Address')->nullable()->hideOnIndex()->required()->hideOnIndex(),
                 Text::make('Координаты','location')->nullable()->hideOnIndex(),

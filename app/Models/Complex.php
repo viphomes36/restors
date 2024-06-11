@@ -15,7 +15,7 @@ class Complex extends Model implements HasMedia
     use InteractsWithMedia;
 
     protected $casts = [
-        'flats' => 'infra_distanse',
+        'infra_distanse' => 'json',
     ];
 
     public function registerMediaConversions(Media $media = null): void
