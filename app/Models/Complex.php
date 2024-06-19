@@ -40,6 +40,11 @@ class Complex extends Model implements HasMedia
         return $this->belongsTo(Country::class);
     }
 
+    public function district()
+    {
+        return $this->belongsTo(District::class);
+    }
+
     public function city()
     {
         return $this->belongsTo(City::class);

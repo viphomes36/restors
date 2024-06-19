@@ -103,6 +103,7 @@ class ComplexResource extends ModelResource
                 Date::make('Начало строительства', 'start_date')->hideOnIndex(),
                 BelongsTo::make('Country'),
                 BelongsTo::make('City'),
+                BelongsTo::make('District'),
                 BelongsTo::make('Developer'),
                 MediaLibrary::make('Общие фото', 'allphotos')->multiple()->removable()->hideOnIndex(),
                 MediaLibrary::make('Ход строительства', 'build_photos')->multiple()->removable()->hideOnIndex(),

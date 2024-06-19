@@ -10,7 +10,7 @@ use App\MoonShine\Resources\CityResource;
 use App\MoonShine\Resources\ComplexResource;
 use App\MoonShine\Resources\CountryResource;
 use App\MoonShine\Resources\DeveloperResource;
-use App\MoonShine\Resources\FlatResource;
+use App\MoonShine\Resources\DistrictResource;
 use App\MoonShine\Resources\InfrastructureResource;
 use App\MoonShine\Resources\OrderResource;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
@@ -55,6 +55,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 MenuItem::make(
                     static fn() =>  "Города",
                     new CityResource()
+                ),
+                MenuItem::make(
+                    static fn() =>  "Районы",
+                    new DistrictResource()
                 ),
             ]),
             MenuItem::make(

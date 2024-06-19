@@ -45,6 +45,21 @@ class BuildingResource extends ModelResource
                     ->fields([
                         Position::make(),
                         Number::make('Этаж', 'flat_num'),
+                        Select::make('Планировка', 'planstype')->nullable()
+                            ->options([
+                                '1' => '1+1',
+                                '2' => '2+1',
+                                '3' => '3+1',
+                                '4' => '4+1',
+                                '5' => '5+1',
+                                '6' => '6+1',
+                                '7' => '1+1dp',
+                                '8' => '2+1dp',
+                                '9' => '3+1dp',
+                                '10' => '4+1dp',
+                                '11' => '5+1dp',
+                                '12' => '6+1dp',
+                            ])->nullable()->hideOnIndex(),
                         Number::make('Цена от', 'start_price'),
                         Number::make('Цена до', 'end_price'),
                         Number::make('Квадрат от', 'count_square_min'),
