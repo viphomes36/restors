@@ -67,6 +67,7 @@ class ComplexResource extends ModelResource
                         '2' => 'Сдан',
                         '3' => 'Проблемные',
                     ]),
+            Text::make('Источник','source')->nullable()->hideOnIndex()->hideOnIndex(),
             Select::make('Валюта', 'currency')
                 ->options([
                     '1' => 'USD',

@@ -25,7 +25,7 @@ class DistrictResource extends ModelResource
     protected string $title = 'Districts';
 
     protected string $column = 'name';
-    
+
     public function fields(): array
     {
         return [

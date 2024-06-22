@@ -12,10 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('complexes', function (Blueprint $table) {
-//            $table->foreignIdFor(\App\Models\District::class)
-//                ->constrained()
-//                ->cascadeOnDelete()
-//                ->cascadeOnUpdate();
+            $table->text('source')->nullable();
         });
     }
 
