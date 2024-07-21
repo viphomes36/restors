@@ -108,7 +108,7 @@ class ComplexResource extends ModelResource
                 BelongsTo::make('Country'),
                 BelongsTo::make('City'),
                 BelongsTo::make('District'),
-                BelongsTo::make('Developer'),
+                BelongsTo::make('Developer')->searchable(),
                 MediaLibrary::make('Общие фото', 'allphotos')->multiple()->removable()->hideOnIndex(),
                 MediaLibrary::make('Ход строительства', 'build_photos')->multiple()->removable()->hideOnIndex(),
                 MediaLibrary::make('Инфраструктура', 'infra_photos')->multiple()->removable()->hideOnIndex(),
