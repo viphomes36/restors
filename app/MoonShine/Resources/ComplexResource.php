@@ -95,6 +95,8 @@ class ComplexResource extends ModelResource
                     Number::make('Море', 'sea'),
                     Number::make('Средняя школа', 'school'),
                     Number::make('Магазин', 'markets'),
+                    Number::make('Аптека', 'apteks'),
+                    Number::make('Аэропорт', 'airport'),
                     Number::make('Медицинский центр', 'medical'),
                 ])->hideOnIndex()->creatableLimit(1),
 

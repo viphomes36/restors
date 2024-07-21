@@ -33,7 +33,7 @@ class BuildingResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Number::make('Этажность', 'flat_count'),
-                Number::make('Минимальный первый взнос', 'flat_count'),
+                Number::make('Минимальный первый взнос', 'min_credit_percent'),
                 Select::make('План платежей', 'credit_plan')->nullable()
                     ->options([
                         '1' => 'Квартал',
@@ -59,6 +59,7 @@ class BuildingResource extends ModelResource
                                 '10' => '4+1dp',
                                 '11' => '5+1dp',
                                 '12' => '6+1dp',
+                                '13' => '1+0 Студии',
                             ])->nullable()->hideOnIndex(),
                         Number::make('Цена от', 'start_price'),
                         Number::make('Цена до', 'end_price'),
