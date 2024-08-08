@@ -1,0 +1,184 @@
+
+
+/* Start:/bitrix/templates/restproperty_v2/components/bitrix/news/turkey/bitrix/news.detail/.default/style.css?16644000143615*/
+#calc-credit-mobile {
+    padding: 0px 15px;
+}
+
+#calendarBig { 
+    width: 100%;
+    max-width: 700px;
+    /*margin: 0 auto;*/
+    margin: 0;
+    border-spacing: 0 1.5em;
+  }
+  #calendarBig td {
+    vertical-align: top;
+    text-align: center;
+  }
+  #calendarBig > thead td:not(:nth-child(2)) {
+    text-decoration: underline;
+    color: rgb(0, 119, 204);
+    cursor: pointer;
+  }
+  #calendarBig > thead td:not(:nth-child(2)):hover {  
+    color: grey;
+  }
+  #calendarBig > thead td:nth-child(2) { 
+    font-size: 150%;
+    font-weight: 700;
+    color: rgb(140, 61, 2);
+  }
+  #calendarBig, #calendarBig table {
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+  }
+  #calendarBig table {
+    display: inline-table;
+  }
+  #calendarBig table thead tr:nth-child(1) { 
+    font-size: 110%;
+    font-weight: 700;
+  }
+  #calendarBig table thead tr:last-child { 
+    font-size: small;
+    font-weight: 700;
+    color: rgb(103, 103, 103);
+  }
+  #calendarBig table tbody td {
+    color: rgb(44, 86, 122);
+  }
+  #calendarBig table tbody td:nth-child(n+6), #calendarBig .holiday {  
+    color: rgb(231, 140, 92);
+  }
+  #calendarBig table tbody td.today {  
+    outline: 3px solid red;
+  }
+  #calendarBig table tbody td[title] { 
+    outline: 3px solid green;
+    background: yellow;
+    cursor: help;
+  }
+  #calendarBig table tbody td[title] a { 
+    display: block;
+    text-decoration: none;
+  }
+  #calendarBig table tbody td[title] a:hover { 
+    background: #fde910;
+    color: red;
+  }
+
+.calendar-snoska{
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.calendar-snoska sup{
+    color: red;
+    font-size: 16px;
+    top: 0;
+    margin-right: 5px;
+}
+
+.container_style_subscribe{
+	border-top: 4px solid #fff;
+}
+
+.header-section{
+  background-image: url(../../../../imageDetail.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* NEW */
+.detail-params-property .detail-params-property-title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.detail-params-property .detail-params-property-items {
+	width: 100%;	
+}
+
+.submit-application-detail {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.submit-application-detail-btn-new {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #FFFFFF;
+    padding: 16px 30px;
+	margin-bottom: 10px;
+	background: linear-gradient(180deg, #07c 0%, #07c 100%);
+	border: 1px solid #07c;
+	border-radius: 4px;	
+	margin-bottom: 0;
+	cursor: pointer;
+}
+.submit-application-detail-btn-new:hover {
+    transform: translateY(-2px);
+	box-shadow: 0px 4px 7px 0px rgb(0 0 0 / 50%);
+}
+.detail-property-favorite-new{
+	font-weight: bold;
+	font-size: 12px;
+	line-height: normal;
+	text-transform: uppercase;
+    padding: 16px 30px;
+	color: grey;	
+	border: 1px solid #07c;
+	box-sizing: border-box;	
+	border-radius: 4px;	
+	background-color: #fff;
+}
+@media(max-width: 1200px){
+	.new-detail-information-property .submit-application-detail {
+		position: relative;
+		padding: 30px 15px;
+		border-bottom: 1px solid #EDEEF0;
+	}	
+	.submit-application-detail {
+		justify-content: center;
+	}	
+	.submit-application-detail-text{
+		width: 100%;
+	}
+	.submit-application-detail-btn-new{
+	   margin-right: 15px;
+	   
+	}
+}
+@media(max-width: 480px){
+	.submit-application-detail {
+		justify-content: center;
+		flex-flow: column;
+	}
+	.submit-application-detail-text{
+		width: 100%;
+	}
+	.submit-application-detail-btn-new{
+	   margin-right: 0px;
+	   margin-bottom: 15px;
+	   
+	}
+}
+/* End */
+
+
+/* Start:/bitrix/templates/restproperty_v2/components/bitrix/breadcrumb/restproperty/style.min.css?1664371055467*/
+.bx-breadcrumb{margin:10px 0}.bx-breadcrumb i{color:#b5bdc2;line-height:13px;font-size:12px;vertical-align:middle;margin-right:5px}.bx-breadcrumb .bx-breadcrumb-item{float:left;margin-bottom:10px;white-space:nowrap;line-height:13px;vertical-align:middle;margin-right:10px}.bx-breadcrumb .bx-breadcrumb-item span{font-family:"Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:13px;white-space:normal}.bx-breadcrumb .bx-breadcrumb-item a{border-bottom:0}
+/* End */
+/* /bitrix/templates/restproperty_v2/components/bitrix/news/turkey/bitrix/news.detail/.default/style.css?16644000143615 */
+/* /bitrix/templates/restproperty_v2/components/bitrix/breadcrumb/restproperty/style.min.css?1664371055467 */
