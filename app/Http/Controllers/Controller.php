@@ -10,5 +10,5 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
 
-    public $templateVersion = "v1";
+    public $templateVersion = "v2";
 }

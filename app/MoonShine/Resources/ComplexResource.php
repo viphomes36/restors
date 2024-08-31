@@ -56,17 +56,17 @@ class ComplexResource extends ModelResource
     public function fields(): array
     {
         return [
-                ID::make()->sortable(),
-                Text::make('Name'),
-                Slug::make('Slug')->from('name')
-                    ->unique(),
-                Image::make('Главное фото','preview')->nullable(),
-                Select::make('Статус', 'status')
-                    ->options([
-                        '1' => 'Строится',
-                        '2' => 'Сдан',
-                        '3' => 'Проблемные',
-                    ]),
+            ID::make()->sortable(),
+            Text::make('Name'),
+            Slug::make('Slug')->from('name')
+                ->unique(),
+            Image::make('Главное фото','preview')->hideOnIndex()->nullable(),
+            Select::make('Статус', 'status')
+                ->options([
+                    '1' => 'Строится',
+                    '2' => 'Сдан',
+                    '3' => 'Проблемные',
+                ])->hideOnIndex(),
             Text::make('Источник','source')->nullable()->hideOnIndex()->hideOnIndex(),
             Select::make('Валюта', 'currency')
                 ->options([
@@ -75,19 +75,19 @@ class ComplexResource extends ModelResource
                     '3' => 'RUB',
                     '4' => 'AED'
                 ]),
-                Select::make('Класс жилья', 'complex_class')
-                    ->options([
-                        '1' => 'Премиум',
-                        '2' => 'Эконом',
-                        '3' => 'Комфорт',
-                        '4' => 'Бизнес',
-                    ])->nullable(),
+            Select::make('Класс жилья', 'complex_class')
+                ->options([
+                    '1' => 'Премиум',
+                    '2' => 'Эконом',
+                    '3' => 'Комфорт',
+                    '4' => 'Бизнес',
+                ])->hideOnIndex()->nullable(),
             Select::make('Тип жилья', 'building_type')
                 ->options([
                     '1' => 'Квартира',
                     '2' => 'Вилла',
                     '3' => 'Пентхаус',
-                ])->nullable(),
+                ])->nullable()->hideOnIndex(),
 
             Json::make('Дистанция', 'infra_distanse')
                 ->fields([
@@ -99,21 +99,21 @@ class ComplexResource extends ModelResource
                     Number::make('Метро', 'metro'),
                     Number::make('Аэропорт', 'airport'),
                     Number::make('Медицинский центр', 'medical'),
-                ])->hideOnIndex()->creatableLimit(1),
+                ])->hideOnIndex(),
 
-                Text::make('Address')->nullable()->hideOnIndex()->required()->hideOnIndex(),
-                Text::make('Координаты','location')->nullable()->hideOnIndex(),
-                TinyMce::make('Описание','description')->nullable()->hideOnIndex(),
-                Date::make('Начало строительства', 'start_date')->hideOnIndex(),
-                BelongsTo::make('Country'),
-                BelongsTo::make('City'),
-                BelongsTo::make('District'),
-                BelongsTo::make('Developer')->searchable(),
-                MediaLibrary::make('Общие фото', 'allphotos')->multiple()->removable()->hideOnIndex(),
-                MediaLibrary::make('Ход строительства', 'build_photos')->multiple()->removable()->hideOnIndex(),
-                MediaLibrary::make('Инфраструктура', 'infra_photos')->multiple()->removable()->hideOnIndex(),
-                HasMany::make('Блоки','buildings',resource: new BuildingResource())->creatable()->searchable(false)->hideOnIndex(),
-                BelongsToMany::make('Инфраструктура','infrastructures',resource: new InfrastructureResource())->hideOnIndex()
+            Text::make('Address')->nullable()->hideOnIndex()->required()->hideOnIndex(),
+            Text::make('Координаты','location')->nullable()->hideOnIndex(),
+            TinyMce::make('Описание','description')->nullable()->hideOnIndex(),
+            Date::make('Начало строительства', 'start_date')->hideOnIndex(),
+            BelongsTo::make('Country'),
+            BelongsTo::make('City'),
+            BelongsTo::make('District'),
+            BelongsTo::make('Developer')->searchable(),
+            MediaLibrary::make('Общие фото', 'allphotos')->multiple()->removable()->hideOnIndex(),
+            MediaLibrary::make('Ход строительства', 'build_photos')->multiple()->removable()->hideOnIndex(),
+            MediaLibrary::make('Инфраструктура', 'infra_photos')->multiple()->removable()->hideOnIndex(),
+            HasMany::make('Блоки','buildings',resource: new BuildingResource())->creatable()->searchable(false)->hideOnIndex(),
+            BelongsToMany::make('Инфраструктура','infrastructures',resource: new InfrastructureResource())->hideOnIndex()
         ];
     }
 
