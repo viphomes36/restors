@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $complexes = Complex::query('id','>',0)->limit(3)->get();
+        $complexes = Complex::query('id','>',0)->limit(8)->get();
         return view($this->templateVersion . "/index",[
             'complexes' => $complexes
         ]);
