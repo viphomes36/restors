@@ -26,7 +26,7 @@ class Complex extends Model implements HasMedia
             ->nonQueued();
 
         $this
-            ->addMediaConversion('preview_crop')
+            ->addMediaConversion('preview')
             ->fit(Fit::Contain, 325, 183)
             ->nonQueued();
 
