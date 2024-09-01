@@ -347,7 +347,7 @@
                                         <a href="/v2/single-property-1.html" class="homes-img">
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button alt sale">For Sale</div>
-                                            <img src="/storage/{{$complex->preview}}" alt="home-1" class="img-responsive">
+                                            <img src="/storage/{{$complex->preview_crop}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">
@@ -472,7 +472,7 @@
                                         <a href="/v2/single-property-1.html" class="homes-img">
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button sale rent">For Rent</div>
-                                            <img src="/storage/{{$complex->preview}}" alt="home-1" class="img-responsive">
+                                            <img src="/storage/{{$complex->preview_crop}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">
