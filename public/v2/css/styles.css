@@ -5824,7 +5824,7 @@ a.button,
 }
 
 .homepage-3 .welcome-area {
-  background: linear-gradient(-36deg, rgba(69, 40, 220, 0.8) 0%, rgba(135, 49, 232, 0.8) 100%), url(../images/bg/video-poster2.png) no-repeat scroll center center/cover;
+  background: linear-gradient(-36deg, rgba(69, 40, 220, 0.8) 0%, rgba(135, 49, 232, 0.8) 100%), url(..//images/bg/video-poster2.png) no-repeat scroll center center/cover;
 }
 
 .homepage-3 .welcome-area {
