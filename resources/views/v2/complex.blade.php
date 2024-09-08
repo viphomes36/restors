@@ -62,7 +62,7 @@
                             </div>
                             <div class="blog-info details mb-30">
                                 <h5 class="mb-4">Description</h5>
-                                <p class="mb-3">{{$complex->description}}</p>
+                                <p class="mb-3">{!!$complex->description!!}</p>
                             </div>
                         </div>
                     </div>
