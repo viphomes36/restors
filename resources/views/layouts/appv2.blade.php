@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="/v2/css/slick.css">
     <link rel="stylesheet" href="/v2/css/styles.css">
     <link rel="stylesheet" id="color" href="/v2/css/default.css">
+
+    <style>
+        .project-head {
+            height: 185px;
+        }
+    </style>
 </head>
 
 <body class="homepage-3 the-search">
