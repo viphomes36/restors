@@ -344,24 +344,24 @@
                                 <div class="project-inner project-head">
                                     <div class="homes">
                                         <!-- homes img -->
-                                        <a href="/v2/single-property-1.html" class="homes-img">
+                                        <a href="/complex/{{$complex->slug}}" class="homes-img">
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button alt sale">For Sale</div>
                                             <img src="/storage/{{$complex->preview}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">
-                                        <a href="/v2/single-property-1.html" class="btn"><i class="fa fa-link"></i></a>
-                                        <a href="/v2/https://www.youtube.com/watch?v=14semTlwyUY" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
-                                        <a href="/v2/single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="btn"><i class="fa fa-link"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="img-poppu btn"><i class="fa fa-photo"></i></a>
                                     </div>
                                 </div>
                                 <!-- homes content -->
                                 <div class="homes-content">
                                     <!-- homes address -->
-                                    <h3><a href="/v2/single-property-1.html">{{$complex->name}}</a></h3>
+                                    <h3><a href="/complex/{{$complex->slug}}">{{$complex->name}}</a></h3>
                                     <p class="homes-address mb-3">
-                                        <a href="/v2/single-property-1.html">
+                                        <a href="/complex/{{$complex->slug}}">
                                             <i class="fa fa-map-marker"></i><span>{{$complex->city->name}}, {{$complex->country->name}}</span>
                                         </a>
                                     </p>
@@ -382,7 +382,7 @@
                                     </ul>
                                     <div class="price-properties footer pt-3 pb-0">
                                         <h3 class="title mt-3">
-                                            <a href="/v2/single-property-1.html">$ 350,000</a>
+                                            <a href="/complex/{{$complex->slug}}">$ 350,000</a>
                                         </h3>
                                         <div class="compare">
                                             <a href="/v2/#" title="Compare">
@@ -469,25 +469,25 @@
                                 <div class="project-inner project-head">
                                     <div class="homes">
                                         <!-- homes img -->
-                                        <a href="/v2/single-property-1.html" class="homes-img">
+                                        <a href="/complex/{{$complex->slug}}" class="homes-img">
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button sale rent">For Rent</div>
                                             <img src="/storage/{{$complex->preview}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">
-                                        <a href="/v2/single-property-1.html" class="btn"><i class="fa fa-link"></i></a>
-                                        <a href="/v2/https://www.youtube.com/watch?v=14semTlwyUY" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
-                                        <a href="/v2/single-property-2.html" class="img-poppu btn"><i class="fa fa-photo"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="btn"><i class="fa fa-link"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="btn popup-video popup-youtube"><i class="fas fa-video"></i></a>
+                                        <a href="/complex/{{$complex->slug}}" class="img-poppu btn"><i class="fa fa-photo"></i></a>
                                     </div>
                                 </div>
                                 <!-- homes content -->
                                 <div class="homes-content">
                                     <!-- homes address -->
-                                    <h3><a href="/v2/single-property-1.html">Real House Luxury Villa</a></h3>
+                                    <h3><a href="/complex/{{$complex->slug}}">{{$complex->name}}</a></h3>
                                     <p class="homes-address mb-3">
-                                        <a href="/v2/single-property-1.html">
-                                            <i class="fa fa-map-marker"></i><span>Est St, 77 - Central Park South, NYC</span>
+                                        <a href="/complex/{{$complex->slug}}">
+                                            <i class="fa fa-map-marker"></i><span>{{$complex->city->name}}, {{$complex->country->name}}</span>
                                         </a>
                                     </p>
                                     <!-- homes List -->
@@ -507,7 +507,7 @@
                                     </ul>
                                     <div class="price-properties footer pt-3 pb-0">
                                         <h3 class="title mt-3">
-                                            <a href="/v2/single-property-1.html">$ 120,000</a>
+                                            <a href="/complex/{{$complex->slug}}">$ 120,000</a>
                                         </h3>
                                         <div class="compare">
                                             <a href="/v2/#" title="Compare">

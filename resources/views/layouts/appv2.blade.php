@@ -48,7 +48,7 @@
                 <div class="left-side">
                     <!-- Logo -->
                     <div id="logo">
-                        <a href="/v2/index.html"><img src="/v2/images/logo-white-1.svg" data-sticky-logo="images/logo-purple.svg" alt=""></a>
+                        <a href="/"><img src="/v2/images/logo-white-1.svg" alt=""></a>
                     </div>
                     <!-- Mobile Navigation -->
                     <div class="mmenu-trigger">
@@ -285,12 +285,7 @@
     <script src="/v2/js/forms-2.js"></script>
     <script src="/v2/js/range.js"></script>
     <script src="/v2/js/color-switcher.js"></script>
-    <script>
-        $(window).on('scroll load', function() {
-            $("#header.cloned #logo img").attr("src", $('#header #logo img').attr('data-sticky-logo'));
-        });
 
-    </script>
 
     <!-- Slider Revolution scripts -->
     <script src="/v2/revolution/js/jquery.themepunch.tools.min.js"></script>

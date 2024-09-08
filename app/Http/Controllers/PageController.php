@@ -23,4 +23,17 @@ class PageController extends Controller
             'developers' => $developers
         ]);
     }
+
+    public function complex($slug)
+    {
+        $complex = Complex::query()
+            ->where('slug', $slug)
+            ->first();
+        if(!$complex) {
+            abort(404);
+        }
+        return view($this->templateVersion .'/complex', [
+            'complex' => $complex
+        ]);
+    }
 }
