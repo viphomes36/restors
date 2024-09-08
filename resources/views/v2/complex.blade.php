@@ -38,7 +38,7 @@
                             <div id="listingDetailsSlider" class="carousel listing-details-sliders slide mb-30">
                                 <h5 class="mb-4">Gallery</h5>
                                 <div class="carousel-inner">
-                                    @foreach($yourModel->getMedia("allphotos") as $photo)
+                                    @foreach($complex->getMedia("allphotos") as $photo)
                                     <div class="active item carousel-item" data-slide-number="0">
                                         <img src="{{$photo->getFullUrl()}}" class="img-fluid" alt="slider-listing">
                                     </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <!-- main slider carousel nav controls -->
                                 <ul class="carousel-indicators smail-listing list-inline">
-                                    @foreach($yourModel->getMedia("allphotos") as $photo)
+                                    @foreach($complex->getMedia("allphotos") as $photo)
                                     <li class="list-inline-item active">
                                         <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#listingDetailsSlider">
                                             <img src="{{$photo->getFullUrl()}}" class="img-fluid" alt="listing-small">
