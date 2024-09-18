@@ -32,8 +32,10 @@ class PageController extends Controller
         if(!$complex) {
             abort(404);
         }
+        $similarComplexes = Complex::query()->limit(3)->get();
         return view($this->templateVersion .'/complex', [
-            'complex' => $complex
+            'complex' => $complex,
+            'similarComplexes' => $similarComplexes
         ]);
     }
 }
