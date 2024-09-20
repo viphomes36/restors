@@ -40,7 +40,7 @@
     </style>
 </head>
 
-<body class="homepage-3 the-search">
+<body class="homepage-3">
 
 <!-- Wrapper -->
 <div id="wrapper">
@@ -69,8 +69,8 @@
                     <nav id="navigation" class="style-1 head-tr">
                         <ul id="responsive">
                             <li><a href="/">Главная</a></li>
-                            <li class="d-none d-xl-none d-block d-lg-block"><a href="/v2/login.html">Login</a></li>
-                            <li class="d-none d-xl-none d-block d-lg-block"><a href="/v2/register.html">Register</a></li>
+                            <li class="d-none d-xl-none d-block d-lg-block"><a href="/">Login</a></li>
+                            <li class="d-none d-xl-none d-block d-lg-block"><a href="/">Register</a></li>
                             <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="/v2/add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li>
                         </ul>
                     </nav>
@@ -399,7 +399,7 @@
             $(".explore__form-checkbox-list").toggleClass("filter-block");
 
         });
-        
+
         <script type="text/javascript" >
             (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();

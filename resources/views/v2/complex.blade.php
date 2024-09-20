@@ -384,17 +384,17 @@
                 <div class="container">
                     <h5>Похожие объекты</h5>
                     <div class="row portfolio-items">
-                        @foreach($similarComplexes as $similarComplexe)
+                        @foreach($similarComplexes as $complex)
                         <div class="item col-lg-4 col-md-6 col-xs-12 landscapes">
                             <div class="project-single">
                                 <div class="project-inner project-head">
                                     <div class="homes">
                                         <!-- homes img -->
-                                        <a href="single-property-1.html" class="homes-img">
+                                        <a href="/" class="homes-img">
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button alt sale">For Sale</div>
                                             <div class="homes-price">$9,000/mo</div>
-                                            <img src="images/blog/b-11.jpg" alt="home-1" class="img-responsive">
+                                            <img src="{{$complex->preview}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">
@@ -406,9 +406,9 @@
                                 <!-- homes content -->
                                 <div class="homes-content">
                                     <!-- homes address -->
-                                    <h3><a href="single-property-1.html">{{$similarComplexe->name}}</a></h3>
+                                    <h3><a href="">{{$complex->name}}</a></h3>
                                     <p class="homes-address mb-3">
-                                        <a href="single-property-1.html">
+                                        <a href="/">
                                             <i class="fa fa-map-marker"></i><span>{{$complex->city->name}}, {{$complex->country->name}}</span>
                                         </a>
                                     </p>
@@ -431,12 +431,6 @@
                                             <span>2 Garages</span>
                                         </li>
                                     </ul>
-                                    <div class="footer">
-                                        <a href="agent-details.html">
-                                            <img src="images/testimonials/ts-1.jpg" alt="" class="mr-2"> Lisa Jhonson
-                                        </a>
-                                        <span>2 months ago</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
