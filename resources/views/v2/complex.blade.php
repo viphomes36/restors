@@ -394,7 +394,7 @@
                                             <div class="homes-tag button alt featured">Featured</div>
                                             <div class="homes-tag button alt sale">For Sale</div>
                                             <div class="homes-price">$9,000/mo</div>
-                                            <img src="{{$complex->preview}}" alt="home-1" class="img-responsive">
+                                            <img src="/storage/{{$complex->preview}}" alt="home-1" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="button-effect">

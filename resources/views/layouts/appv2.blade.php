@@ -40,7 +40,7 @@
     </style>
 </head>
 
-<body class="homepage-3">
+<body class="homepage-3 the-search">
 
 <!-- Wrapper -->
 <div id="wrapper">
