@@ -16,6 +16,14 @@ class PageController extends Controller
         ]);
     }
 
+    public function complexes()
+    {
+        $complexes = Complex::paginate(9);
+
+        return view($this->templateVersion . "/complexes",[
+            'complexes' => $complexes
+        ]);
+    }
     public function developers()
     {
         $developers = Developer::query()->where('id','>',0)->limit(16)->get();

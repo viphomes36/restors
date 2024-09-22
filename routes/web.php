@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\PageController::class,'index']);
 Route::get('/complex/{slug}', [\App\Http\Controllers\PageController::class,'complex']);
+Route::get('/complexes', [\App\Http\Controllers\PageController::class,'complexes']);
 
 
 Route::get('/developers', [\App\Http\Controllers\PageController::class,'developers']);

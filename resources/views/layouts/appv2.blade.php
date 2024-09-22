@@ -40,8 +40,12 @@
     </style>
 </head>
 
-<body class="homepage-3 the-search">
-
+{{----}}
+@if(request()->path() == "complexes")
+<body class="inner-pages st-1 homepage-3 agents hp-6 full hd-white">
+@else
+    <body class="homepage-3 the-search">
+@endif
 <!-- Wrapper -->
 <div id="wrapper">
     <!-- START SECTION HEADINGS -->
@@ -69,6 +73,7 @@
                     <nav id="navigation" class="style-1 head-tr">
                         <ul id="responsive">
                             <li><a href="/">Главная</a></li>
+                            <li><a href="/complexes">ЖК</a></li>
                             <li class="d-none d-xl-none d-block d-lg-block"><a href="/">Login</a></li>
                             <li class="d-none d-xl-none d-block d-lg-block"><a href="/">Register</a></li>
                             <li class="d-none d-xl-none d-block d-lg-block mt-5 pb-4 ml-5 border-bottom-0"><a href="/v2/add-property.html" class="button border btn-lg btn-block text-center">Add Listing<i class="fas fa-laptop-house ml-2"></i></a></li>
